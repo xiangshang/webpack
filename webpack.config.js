@@ -8,9 +8,10 @@ module.exports = {
 	output: {
 		filename: '[name].bundle.js',
 		path:path.resolve(__dirname, 'dist'),
+		chunkFilename: '[name].bundle.js'
 //		publicPath: '/'
 	},
-	devtool: 'eval',
+	devtool: 'eval-source-map',
 	devServer: {
 		contentBase: './dist',
 		hot: true
